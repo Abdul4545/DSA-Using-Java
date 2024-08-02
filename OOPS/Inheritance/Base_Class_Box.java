@@ -1,13 +1,14 @@
 package OOPS.Inheritance;
 
-public class Base_Class {
+public class Base_Class_Box {
 
-    private int length;
+    int length;
+    // int length; can not be accessed from child class
     int height;
     int width;
 
     
-    Base_Class() {
+    Base_Class_Box() {
         this.length = -1;
         this.height = -1;
         this.width = -1;
@@ -15,8 +16,7 @@ public class Base_Class {
     }
     
     // cube
-    
-    Base_Class(int side) {
+    Base_Class_Box(int side) {
         this.length = side;
         this.height = side;
         this.width = side;
@@ -24,20 +24,21 @@ public class Base_Class {
         System.out.println("Volume of Cube is : " + side*side*side);
     }
 
-    
-    Base_Class(int length, int height, int width) {
+    // cuboid
+    Base_Class_Box(int length, int height, int width) {
         this.length = length;
         this.height = height;
         this.width = width;
     }
     
-    Base_Class(Base_Class old) {
+
+    Base_Class_Box(Base_Class_Box old) {
         this.length = old.length;
         this.height = old.height;
         this.width = old.width;
     }
 
     public void information() {
-        System.out.println("Running the Base_Class");
+        System.out.println("Running the Base_Class_Box");
     }
 }

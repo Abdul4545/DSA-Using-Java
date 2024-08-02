@@ -17,9 +17,11 @@ public class StaticBlock {
         StaticBlock obj = new StaticBlock();
         System.out.println(StaticBlock.a + " " + StaticBlock.b);
 
-        b += 3;
+        StaticBlock.b += 3;
+        System.out.println(StaticBlock.a + " " + StaticBlock.b);
 
-        System.out.println(a + " " + b);
+        StaticBlock obj2 = new StaticBlock();
+        System.out.println(StaticBlock.a + " " + StaticBlock.b);
 
 
 

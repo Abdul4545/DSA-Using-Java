@@ -22,7 +22,6 @@ public class Main {
         Parent.hello();
         son.normal();
     
-        
     }
     
 }

@@ -1,8 +1,10 @@
 package OOPS.Single_Object;
+
 // class which has only one object
 public class SingletonClass {
 
     String name;
+    int age = 22;
     private SingletonClass(String name) {
         this.name = name;
     }

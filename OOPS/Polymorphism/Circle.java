@@ -8,9 +8,14 @@ public class Circle extends Shapes {
     // hence it is overriding the parent class
 
     // @Override // this is called annotation
-    // it checks whether something which we are overriding is overriden or not
+    // it checks whether something which we are overriding is being overriden or not
 
+    @Override
     void area() {
+        System.out.println("Area of circle is pi * r * r.");
+    }
+
+    void areaaa() {
         System.out.println("Area of circle is pi * r * r.");
     }
 }

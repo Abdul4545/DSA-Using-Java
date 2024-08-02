@@ -14,15 +14,22 @@ public class Main {
 
         Shapes shape1 = new Shapes();
         Shapes circle1 = new Circle();
-        Shapes triangle1 = new Triangle();
-        
 
-        circle1.area();
+        // circle1.area();
+
+        // circle1.areaaa();  
+        // It will show error as areaaa() is not defined in Shapes   
+        // here, which method will be called depends on the type of Child, this is known as Upcasting. 
+
+
+        // Rectangle r = new Rectangle();
+        // r.greetings();
 
         Rectangle.greetings();
+        // greetings() is a static method in Rectangle class so it does not require object of that class
 
         // Parent obj = new Child();
-        // here, which method will be called depends on this type of Child, this is known as Upcasting.
+        // here, which method will be called depends on the type of Child, this is known as Upcasting.
 
          
 
@@ -42,7 +49,6 @@ public class Main {
 
         // overriding depends on object
         // static does not depend on oject hence static methods can not be overriden -> we can inherit but we can not override
-
 
     }
     

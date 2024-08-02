@@ -7,7 +7,8 @@ package OOPS;
 public class InnerClasses {
 
 
-    // when we make this class as static then it does not require the objects of the outher class as static members are independent of the class object
+    // when we make this class as static then it does not require the objects of the outher class 
+    //as static members are independent of the class object
     
     static class Test {
        String name;
@@ -15,7 +16,11 @@ public class InnerClasses {
         public Test(String name) {
            this.name = name;
         }
-    
+
+        @Override 
+        public String toString() {
+            return name;
+        }
     }
     
 
@@ -26,10 +31,9 @@ public class InnerClasses {
 
         System.out.println(a.name + " " + b.name);
 
+        System.out.println(a);
+
     }
     
 }
 
-// static class A {
-
-// }
