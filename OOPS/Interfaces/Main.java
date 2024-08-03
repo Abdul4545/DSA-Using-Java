@@ -15,7 +15,7 @@ public class Main {
         // Engine car2 = new Car();
         // car2.accelerate();
         // car2.start();
-        // here we are accessing functions defined in the car class
+        // here we are accessing functions defined in the Car class but we can not access variables of Car class
 
         // what thing to access depends on this -> Engine car2
         // what version of thing to access depends on -> new Car();

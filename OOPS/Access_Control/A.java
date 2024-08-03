@@ -6,7 +6,7 @@ public class A {
     // access only in this file
 
     String name; 
-    // when we dont specify any access modifier then by default it is allowed to access in the same package, as well as in subclass of same same package
+    // when we dont specify any access modifier then by default it is allowed to access in the same package, as well as in subclass of same package
 
     int[] arr;
 
@@ -24,10 +24,21 @@ public class A {
         this.num = num;
     }
 
+    A() {
+
+    }
+
     public A(int num, String name) {
         this.num = num;
         this.name = name;
        this.arr = new int[num];
+    }
+
+
+    public static void main(String[] args) {
+
+        A obj = new A();
+        System.out.println(obj.num);
     }
 
     

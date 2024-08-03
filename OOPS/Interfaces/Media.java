@@ -2,7 +2,7 @@ package OOPS.Interfaces;
 
 public interface Media {
 
-    void start();
-    void stop();
+    void mediaStart();
+    void mediaStop();
 
 }

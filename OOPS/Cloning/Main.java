@@ -9,6 +9,7 @@ public class Main {
         Human moid = new Human(20, "Abdul Moid");
 
         // Human twin = new Human(moid);
+        // copy of moid
 
         Human twin = (Human)moid.clone();
 

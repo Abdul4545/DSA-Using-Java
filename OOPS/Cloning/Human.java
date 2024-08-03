@@ -35,7 +35,6 @@ public class Human implements Cloneable {
         Human twin = (Human)super.clone(); // this is actually shallow copy
 
         // make a deep copy
-
         twin.arr = new int[twin.arr.length];
         for(int i = 0; i < twin.arr.length; i++) {
             twin.arr[i] = this.arr[i];

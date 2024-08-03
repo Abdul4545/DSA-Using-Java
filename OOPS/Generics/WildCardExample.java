@@ -2,6 +2,8 @@ package OOPS.Generics;
 import java.util.Arrays;
 import java.util.List;
 
+
+// here T should either be Number or its subclasses
 class WildCardExample<T extends Number> {
 
     private Object[] data;
@@ -41,6 +43,7 @@ class WildCardExample<T extends Number> {
     }
 
     public T remove() {
+        @SuppressWarnings("unchecked")
         T removed = (T)data[size--];
         return removed;
     }

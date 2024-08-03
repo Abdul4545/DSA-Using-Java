@@ -14,6 +14,7 @@ public class Student implements Comparable<Student> {
 
     @Override
     public int compareTo(Student o) {
+        
         int diff = (int)(this.marks - o.marks);
 
         // if diff == 0 : means both are equal
@@ -41,8 +42,6 @@ public class Student implements Comparable<Student> {
             System.out.println(moid.compareTo(asaad));
             System.out.println("Asaad has more marks");
         }
-
-
     }
 
     

@@ -34,12 +34,12 @@ public class CustomArrayList {
         for(int i = 0; i < data.length; i++) {
             temp[i] = data[i];
         }
-
         data = temp;
     }
 
     public int remove() {
         int removed = data[size--];
+        data[size] = 0;
         return removed;
     }
 
@@ -89,6 +89,9 @@ public class CustomArrayList {
 
         // System.out.println(list.get(2));
 
+        System.out.println(list);
+
+        System.out.println(list.remove());
         System.out.println(list);
 
 

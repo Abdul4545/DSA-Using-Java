@@ -10,12 +10,14 @@ public class Son extends Parent {
     }
 
     void partner(String name, int age) {
-        System.out.println("I love " + name + "and she is "+ age + " years old.");
-
+        System.out.println("I love " + name + " and she is "+ age + " years old.");
     }
+
 
     public Son(int age) {
         super(age);
+        
     }
+
     
 }

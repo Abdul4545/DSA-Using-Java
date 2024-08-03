@@ -11,7 +11,6 @@ public abstract class Parent {
     int age;
 
     // abstract class constructor
-
     public Parent() {
 
     }
@@ -28,11 +27,12 @@ public abstract class Parent {
     // only public, protected & private are permitted
 
     static void hello() {
-        System.out.println("hi");
+        System.out.println("hi from static method in parent");
     }
 
+    // can be overriden by child class
     void normal() {
-        System.out.println("Normal method");
+        System.out.println("hii from Normal method in parent");
     }
 
 }

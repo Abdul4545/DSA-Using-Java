@@ -1,6 +1,8 @@
 package OOPS.Generics;
 import java.util.Arrays;
 
+// generics
+// T stands for type
 class CustomGenArrayList<T> {
 
     private Object[] data;
@@ -36,10 +38,13 @@ class CustomGenArrayList<T> {
     }
 
     public T remove() {
-        T removed = (T)data[size--];
+        @SuppressWarnings("unchecked")
+        T removed = (T)(data[--size]);
+        data[size] = null;
         return removed;
     }
 
+    @SuppressWarnings("unchecked")
     public T get(int index) {
         return (T)data[index];
     }
@@ -69,6 +74,8 @@ class CustomGenArrayList<T> {
             list1.add(2 * i);
         }
     
+        System.out.println(list1);
+        System.out.println(list1.remove());;
         System.out.println(list1);
     }
 

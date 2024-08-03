@@ -24,11 +24,11 @@ public class NiceCar {
     }
 
     public void startAudio() {
-        player.start();
+        player.mediaStart();
     }
 
     public void stopAudio() {
-        player.stop();
+        player.mediaStop();
     }
 
     public void upgradeEngine() {

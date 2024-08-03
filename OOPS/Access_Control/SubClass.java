@@ -10,6 +10,9 @@ public class SubClass extends A {
         SubClass obj = new SubClass(23, "Asaad Khan");
 
         String add = obj.address;
+        add = "Naugarh";
+        System.out.println(add);
+
     }
 
 
