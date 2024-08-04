@@ -1,7 +1,9 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.Vector;
 
 public class ArrayListCollection {
 
@@ -38,23 +40,34 @@ public class ArrayListCollection {
         
 
         // multidimensional ArrayList
-        ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+        // ArrayList<ArrayList<Integer>> list = new ArrayList<>();
 
         // initializing with 3 ArrayList
-        for(int i = 0; i < 3; i++) {
-            list.add(new ArrayList<>());
-        }
+        // for(int i = 0; i < 3; i++) {
+        //     list.add(new ArrayList<>());
+        // }
 
         // adding elements to the ArrayList
-        for(int i = 0; i < 3; i++) {
-            for(int j = 0; j < 5; j++) {
-                list.get(i).add(sc.nextInt());
-            }
-        }
+        // for(int i = 0; i < 3; i++) {
+        //     for(int j = 0; j < 5; j++) {
+        //         list.get(i).add(sc.nextInt());
+        //     }
+        // }
 
-        System.out.println(list);
+        // System.out.println(list);
 
-        sc.close();
+        // sc.close();
+
+
+        // vector is thread safe means only 1 thread can access it at a time
+        // List<Integer> vector = new Vector<>();
+        // vector.add(1);
+        // vector.add(2);
+        // vector.add(3);
+        // vector.add(4);
+
+        // System.out.println(vector);
+
 
     }
     
