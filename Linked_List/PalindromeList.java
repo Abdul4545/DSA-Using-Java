@@ -17,6 +17,8 @@ public class PalindromeList {
 		return previous;
     }
 
+
+	
     static boolean isPalindrome(Node head) {
 
         Node slow = head;
@@ -50,7 +52,8 @@ public class PalindromeList {
 		return true;
     }
 
-    public static void main(String[] args) {
+
+	public static void main(String[] args) {
 
         Node a = new Node(1);
         Node b = new Node(12);

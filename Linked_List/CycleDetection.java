@@ -25,6 +25,32 @@ public class CycleDetection {
     }
 
 
+    // length of cycle
+    public static int lengthCycle(Node head) {
+        
+        Node slow = head;
+        Node fast = head;
+
+        while(fast != null && fast.nextNode != null) {
+            slow = slow.nextNode;
+            fast = fast.nextNode.nextNode;
+
+            if(fast == slow) {
+                // calculate the length
+                Node temp = slow;
+                int length = 0;
+                do {
+                    temp = temp.nextNode;
+                    length++;
+                }
+                while(temp != fast);
+                return length;
+            }
+        }
+        return 0;
+    }
+
+
     public static Node firstNode(Node head) {
         // Write your code here.
         Node slow = head;

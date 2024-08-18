@@ -100,7 +100,6 @@ class linkedList {
             temp.nextNode = head;
             head = temp;
         }
-
     }
 
     // Insert a node at any given index.
@@ -122,7 +121,6 @@ class linkedList {
         }
 
         else {
-
             for(int i = 1; i < index-1; i++) {
                 temp = temp.nextNode;
             }
@@ -130,8 +128,8 @@ class linkedList {
             t.nextNode = temp.nextNode;
             temp.nextNode = t;
         }
-
     }
+
 
     // Method to return the element at given index
     int getElementAtIndex(int index) {
@@ -145,8 +143,6 @@ class linkedList {
                 temp = temp.nextNode;
             }
         }
-
-
         return temp.data;
     }
 
@@ -180,7 +176,7 @@ class linkedList {
     void display() {
         Node temp = head;
         while(temp != null) {
-            System.out.print(temp.data + " ");
+            System.out.print(temp.data + " -> ");
             temp = temp.nextNode;
         }
 
@@ -195,7 +191,6 @@ class linkedList {
             count++;
             temp = temp.nextNode;
         }
-
         return count;
     }
 }

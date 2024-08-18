@@ -9,14 +9,14 @@ public class ReverseList {
         Node(int val) {
             this.val = val;
         }
-        
+
     }
 
     public static Node reverseList(Node head) {
 
-        // if(head == null || head.nextNode == null) {
-        //     return head;
-        // }
+        if(head == null || head.nextNode == null) {
+        return head;
+        }
 
         // Node newHead = reverseList(head.nextNode);
         // head.nextNode.nextNode = head;
@@ -25,24 +25,82 @@ public class ReverseList {
 
 
         Node current = head;
-		Node previous = null;
-		Node Next = null;
+        Node previous = null;
+        Node Next = head.nextNode;
 
-		while(current != null) {
-			Next = current.nextNode;
-			current.nextNode = previous;
-			previous = current;
-			current = Next;
-		}
+        while (current != null) {
+            Next = current.nextNode;
+            current.nextNode = previous;
+            previous = current;
+            current = Next;
+        }
 
-		return previous;
+        head = previous;
+        return head;
     }
 
 
 
+    // static void reverse(Node head) {
+    //     if(head == tail) {
+    //         head = tail;
+    //         return;
+    //     }
+
+    //     reverse(head.nextNode);
+    //     tail.nextNode = head;
+    //     tail = head;
+    //     tail.nextNode = null;
+
+    // }
+
+
+
+
+    public static Node reverseListPart(Node head, int left, int right) {
+
+        if(left == right) {
+            return head;
+        }
+
+       // skip the first left-1 nodes 
+       Node current = head;
+       Node prev = null;
+       for(int i = 0; current != null && i < left-1; i++) {
+            prev = current;
+            current = current.nextNode;
+       }
+
+       Node last = prev;
+       Node newEnd = current;
+
+       // reverse between left and right
+       Node next = current.nextNode;
+       for(int i = 0; current != null && i < right - left + 1; i++) {
+            current.nextNode = prev;
+            prev = current;
+            current = next;
+            if(next != null) {
+                next = next.nextNode;
+            }
+       }
+
+       if(last != null) {
+        last.nextNode = prev;
+       }
+
+       else {
+        head = prev;
+       }
+
+       newEnd.nextNode = current;
+       return head;
+
+    }
+
     static void display(Node head) {
-        
-        if(head == null) {
+
+        if (head == null) {
             return;
         }
 
@@ -67,10 +125,10 @@ public class ReverseList {
         e.nextNode = f;
         f.nextNode = g;
 
-        Node r = reverseList(a);
+        // Node r = reverseList(a);
 
+        Node r = reverseListPart(a, 2, 4);
         display(r);
-        
+
     }
-    
 }

@@ -12,7 +12,6 @@
 //         Node tempo = oddList;
 
 //         while (temp != null) {
-
 //             if(temp.data % 2 == 0) {
 //                 tempe = temp;
 //                 tempe.nextNode = temp.nextNode;

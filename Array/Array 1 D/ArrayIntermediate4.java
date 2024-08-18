@@ -17,9 +17,9 @@ public class ArrayIntermediate4 {
         for(int i = 1; i < n; i++) {
             arr[i] =  arr[i-1] + arr[i];
         }
-
         return arr;
     }
+    
 
     // suffix sum array
     static int[] suffixSumArray(int[] arr) {

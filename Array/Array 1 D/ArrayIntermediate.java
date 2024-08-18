@@ -63,9 +63,7 @@ public class ArrayIntermediate {
                 max = arr[i];
             }
         }
-
         return max;
-
     }
 
     static int secondLargest(int[] arr) {

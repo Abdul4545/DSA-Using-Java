@@ -20,7 +20,29 @@ public class DeleteMidOfLinkedList {
         slow.nextNode = slow.nextNode.nextNode;
 
         return temp;
-     }
+    }
+
+    // delete duplicates
+
+    public static Node deleteDuplicates(Node head) {
+
+        if(head == null) {
+            return head;
+        }
+        Node temp = head;
+
+        while(temp.nextNode != null) {
+            if(temp.data == temp.nextNode.data) {
+                temp.nextNode = temp.nextNode.nextNode;
+            }
+
+            else {
+                temp = temp.nextNode;
+            }
+        }
+
+        return head;
+    }
 
     public static void main(String[] args) {
 
@@ -31,6 +53,7 @@ public class DeleteMidOfLinkedList {
         Node e = new Node(50);
         Node f = new Node(60);
         Node g = new Node(70);
+        Node h = new Node(70);
 
         a.nextNode = b;
         b.nextNode = c;
@@ -38,22 +61,31 @@ public class DeleteMidOfLinkedList {
         d.nextNode = e;
         e.nextNode = f;
         f.nextNode = g;
+        g.nextNode = h;
 
-        Node temp1 = a;
-        Node temp2 = b;
+        // Node temp1 = a;
+        // Node temp2 = b;
 
-        DeleteNode(temp1);
+        // DeleteNode(temp1);
 
-        while(temp1.nextNode != null) {
-            System.out.print(temp1.data + " ");
+        // while(temp1.nextNode != null) {
+        //     System.out.print(temp1.data + " ");
+        // }
+
+        // DeleteNode(temp2);
+
+        // while(temp1.nextNode != null) {
+        //     System.out.print(temp2.data + " ");
+        // }
+
+        Node list = deleteDuplicates(a);
+        Node node = list;
+
+        while(node != null) {
+            System.out.print(node.data + " ");
+            node = node.nextNode;
         }
 
-        DeleteNode(temp2);
-
-        while(temp1.nextNode != null) {
-            System.out.print(temp2.data + " ");
-        }
- 
     }
     
 }

@@ -1,15 +1,48 @@
 package Linked_List;
 
 public class DoublyLL {
-
-    static class Node {
+    
+    private static class Node {
         int data;
         Node nextNode;
-        Node prevNode;  
-        Node(int data) {
+        Node prevNode;
+
+        public Node(int data) {
             this.data = data;
         }
+
+        public Node(int data, Node nextNode, Node prevNode) {
+            this.data = data;
+            this.nextNode = nextNode;
+            this.prevNode = prevNode;
+        }
     }
+
+    
+    Node head;
+
+    public void insertFirst(int val) {
+        Node node = new Node(val);
+        node.nextNode = head;
+        node.prevNode = null;
+
+        if(head != null) {
+            head.prevNode = node;
+        }
+
+        head = node;
+    }
+
+
+    // public void display(){
+    //     Node temp = head;
+    //     while (temp != null) {
+    //         System.out.print(temp.data + "->");
+    //         temp = temp.nextNode;
+    //     }
+    //     System.out.println();
+    // }
+
 
     public static Node insertAtHead(Node head, int val) {
         Node temp = new Node(val);

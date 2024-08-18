@@ -1,5 +1,15 @@
 package Linked_List;
 
+
+class Node {
+    int data;
+    Node nextNode;
+
+    Node(int data) {
+        this.data = data;
+    }
+}
+
 public class LLBasics {
 
     // funtion for printing the linked list
@@ -97,15 +107,6 @@ public class LLBasics {
 
 }
 
-
-class Node {
-    int data;
-    Node nextNode;
-
-    Node(int data) {
-        this.data = data;
-    }
-}
 
 
 

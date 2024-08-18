@@ -29,7 +29,6 @@ public class ArrayIntermediate3 {
         int i = 0;
         int j = arr.length-1;
         while(i < j) {
-
             if(arr[i] % 2 == 0) {
                 i++;
             }
