@@ -33,12 +33,14 @@ public class StringBasics {
         // compareTo() -> returns integer value based on lexographically -> integer value can be 0, +ve as well -ve
         // characters ASCII value is compared
 
-        // String name2 = "Asaad";
+        String name2 = "Asaad";
         // String name3 = "Abdul Moid";
         // System.out.println(name1.compareTo(name2));
 
         // System.out.println(name2.compareTo(name3));
-        // System.out.println(name2.contains("aa"));
+        System.out.println(name2.contains("aa"));
+        System.out.println("hello");
+        System.out.println(name2.indexOf("aa", 0));
 
         // System.out.println(name1.startsWith("Asa"));
         // System.out.println(name1.endsWith("aad"));

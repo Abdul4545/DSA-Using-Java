@@ -14,7 +14,8 @@ public class StackBasics {
         st.push(34);
 
         System.out.println(st);
-        System.out.println(st.peek());
+        System.out.println("printed stack");
+        System.out.println("stack peek" + st.peek());
         System.out.println("Size of stack is : "+ st.size());
 
 

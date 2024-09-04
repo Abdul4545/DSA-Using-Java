@@ -25,6 +25,8 @@ public class ArrayIntermediate3 {
         }
     }
 
+
+
     static void sortOddEven(int[] arr) {
         int i = 0;
         int j = arr.length-1;
@@ -48,6 +50,7 @@ public class ArrayIntermediate3 {
         }
     }
 
+    
     static int[] returnSquareInNonDecreasingOrder(int arr[]) {
         int n = arr.length;
         int i = 0;

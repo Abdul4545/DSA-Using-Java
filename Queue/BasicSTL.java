@@ -6,8 +6,9 @@ import java.util.*;
 public class BasicSTL {
 
     public static void main(String[] args) {
+
         
-        Queue <Integer> q = new ArrayDeque<>();
+        Queue<Integer> q = new LinkedList<>();
 
         q.add(1);
         q.add(2);
@@ -21,14 +22,14 @@ public class BasicSTL {
 
         // q.add(6);
 
-        // System.out.println(q.remove());
-        // System.out.println(q.poll());
+        System.out.println(q.remove());
+        System.out.println(q.poll());
 
-        // System.out.println(q.peek());
-        // System.out.println(q.element());
+        System.out.println(q.peek());
+        System.out.println(q.element());
 
-        // System.out.println(q.size());
-        // System.out.println(q.isEmpty());
+        System.out.println(q.size());
+        System.out.println(q.isEmpty());
 
         System.out.println(q);
         

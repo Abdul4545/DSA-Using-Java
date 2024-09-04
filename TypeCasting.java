@@ -7,5 +7,6 @@ public class TypeCasting {
         
         float num = sc.nextFloat();
         System.out.println(num);
+        sc.close();
     }
 }

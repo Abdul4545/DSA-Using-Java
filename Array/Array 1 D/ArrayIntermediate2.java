@@ -15,8 +15,8 @@ public class ArrayIntermediate2 {
         }
     }
 
-    // rotate an array by k steps where k is non negative and k can be greater than array length
     
+    // rotate an array by k steps where k is non negative and k can be greater than array length
     static int[] rotateArray(int[] arr, int k) {
         int n = arr.length;
         k = k % n;

@@ -10,9 +10,7 @@ public class InsertionSort {
 
         // we assume that 1st element at index 0 is sorted
         for(int i = 1; i < n; i++) {
-
             int j = i;
-
             while (j > 0 && arr[j] < arr[j-1]) {
                 int temp = arr[j];
                 arr[j] = arr[j-1];

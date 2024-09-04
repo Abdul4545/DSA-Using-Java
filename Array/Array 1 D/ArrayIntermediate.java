@@ -16,6 +16,7 @@ public class ArrayIntermediate {
         return count;
     }
 
+
     static int tripletTargetSum(int[] arr, int sum) {
         int count = 0;
 
@@ -52,8 +53,8 @@ public class ArrayIntermediate {
 
     }
 
+    
     // find the second largest from the array
-
     static int findMax(int[] arr) {
 
         int max = Integer.MIN_VALUE;
