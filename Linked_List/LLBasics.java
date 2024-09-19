@@ -84,7 +84,7 @@ public class LLBasics {
         //     a = a.nextNode;
         // }
 
-        // it is not a good way of travering a linked list. Always use function or use temp node
+        // it is not a good way of traversing a linked list. Always use function or use temp node
 
         // System.out.println();
 

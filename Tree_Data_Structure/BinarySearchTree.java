@@ -91,9 +91,6 @@ public class BinarySearchTree {
     }
 
 
-    
-    
-
     public void populate(int nums[]) {
         for(int i = 0; i < nums.length; i++) {
             this.insert(nums[i]);
@@ -121,12 +118,12 @@ public class BinarySearchTree {
 
     public static void main(String[] args) {
 
-        BinarySearchTree BST = new BinarySearchTree();
+        // BinarySearchTree BST = new BinarySearchTree();
 
-        int nums[] = {20, 45, 34, 12, 54, 67, 23, 10, 15, 8};
+        // int nums[] = {20, 45, 34, 12, 54, 67, 23, 10, 15, 8};
 
-        BST.populate(nums);
-        BST.display();
+        // BST.populate(nums);
+        // BST.display();
 
         // BST.populate(new int[] {20, 45, 34, 12, 54, 67, 23, 10, 15, 8});
 

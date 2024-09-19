@@ -43,7 +43,7 @@ class ArrayBasics {
 
     static boolean sortedArray(int[] arr) {
         boolean check = true;
-        for(int i = 1 ; i < arr.length-1; i++) {
+        for(int i = 1 ; i < arr.length; i++) {
             if(arr[i] < arr[i-1]) {
                 check = false;
                 break;

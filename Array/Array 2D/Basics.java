@@ -75,7 +75,7 @@ class Basics {
 
         };
 
-        printArray(arr1);
+        // printArray(arr1);
 
         // taking input from the user
         // int[][] arr = new int[2][3];
@@ -108,7 +108,7 @@ class Basics {
 
         // matrixMultiplication(martix1, 2, 2, matrix2, 2, 2);
 
-        // reverseMatrix(arr1);
+        reverseMatrix(arr1);
         // printArray(arr1);
 
         sc.close();

@@ -20,7 +20,7 @@ public class HashmapSTL {
 
         System.out.println();
         // getting value of a key from the hashmap
-        System.out.println("get method value : " + mp.get("Vivek"));
+        System.out.println("get key value : " + mp.get("Vivek"));
 
 
         // Changing/updating the value of a key

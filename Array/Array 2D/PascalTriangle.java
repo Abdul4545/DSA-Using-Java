@@ -10,6 +10,8 @@
 
 // Que) Given an interger n, return the first n rows of Pascal's triangle
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class PascalTriangle {
@@ -21,6 +23,25 @@ public class PascalTriangle {
             }
             System.out.println();
         }
+    }
+
+
+    public static List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> ans = new ArrayList<>();
+        
+        for(int i = 0; i < numRows; i++) {
+            List<Integer> row = new ArrayList<Integer>(i+1);
+            row.add(1);
+            for(int j = 1; j < i; j++) {
+                int value = ans.get(i-1).get(j) + ans.get(i-1).get(j-1);
+                row.add(value);
+            }
+            if(i > 0) {
+                row.add(1);
+            }
+            ans.add(row);
+        }
+        return ans;
     }
 
     static int[][] Pascal(int n) {
@@ -38,8 +59,6 @@ public class PascalTriangle {
                 ans[i][j] = ans[i-1][j] + ans[i-1][j-1];
             }
         }
-
-
         return ans;
     } 
 
@@ -52,6 +71,8 @@ public class PascalTriangle {
 
         int[][] ans = Pascal(rows);
         printMatrix(ans);
+
+        sc.close();
 
 
         

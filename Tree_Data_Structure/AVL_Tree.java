@@ -5,10 +5,16 @@ public class AVL_Tree {
     // the solution is self balancing binary tree
     // example : AVL (Adelson-Velskii and Landis)
 
-    // Algorth
+    // Algorith
     // 1) Insert normally node n
     // 2) find the node that makes the tree unbalanced, bottom up
     // 3) using one of the 4 rules rotate
+
+        //             P
+
+        //     C               t3
+
+        // t1      t2
 
 
     // four rules
@@ -16,6 +22,12 @@ public class AVL_Tree {
 
     // 1) P ----> C(left) ----> G(left)
     // use right rotation on P
+
+            //         C 
+
+            // t1              P 
+
+            //             t2      t3
 
 
 
@@ -123,9 +135,9 @@ public class AVL_Tree {
                 return leftRotate(node);
             }
 
-            if(height(node.right.left) - height(node.right.right) < 0) {
-                // left left case
-                node.left = rightRotate(node.right);
+            if(height(node.right.left) - height(node.right.right) > 0) {
+                // right left case
+                node.right = rightRotate(node.right);
                 return leftRotate(node);
             }
         }
@@ -145,7 +157,6 @@ public class AVL_Tree {
         c.height = Math.max(height(c.left), height(c.right) + 1);
 
         return p;
-
     }
 
     private Node rightRotate(Node p) {
@@ -221,11 +232,11 @@ public class AVL_Tree {
 
         AVL_Tree tree = new AVL_Tree();
 
-        for(int i = 0; i < 100000; i++) {
+        for(int i = 0; i < 10; i++) {
             tree.insert(i);
         }
 
-        // tree.display();
+        tree.display();
 
         System.out.println(tree.height());
     }
