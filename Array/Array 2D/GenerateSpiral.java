@@ -26,7 +26,6 @@ public class GenerateSpiral {
             }
             topRow++;
 
-
             // right column -> topRow to bottomRow
             for(int i = topRow; i <= bottomRow && current <= n * n; i++) {
                 matrix[i][rightCol] = current;
@@ -47,11 +46,9 @@ public class GenerateSpiral {
                 current++;
             }
             leftCol++;
-
         }
 
         return matrix;
-
     }
 
     public static void main(String[] args) {
@@ -63,11 +60,7 @@ public class GenerateSpiral {
 
         int[][] matrix = GenerateSpiralMatrix(n);
         printMatrix(matrix);
+        sc.close();
 
-        
-
-
-        
-    }
-    
+    } 
 }

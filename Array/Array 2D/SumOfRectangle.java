@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class SumOfRectangle {
 
     // que) Given a matrix 'a' of dimensions nxm and 2 coordinates(L1,R1) and (L2, R2).
-    // Return thr sum of the rectangle from (L1,R1) to (L2, R2).
+    // Return the sum of the rectangle from (L1,R1) to (L2, R2).
 
     // Using Brute force method.
     static int findSum(int[][] matrix, int l1, int r1, int l2, int r2) {
@@ -48,8 +48,7 @@ public class SumOfRectangle {
             }
             else {
                 sum += matrix[i][r2];
-            }
-                
+            }        
         }
         return sum;
     }
@@ -93,7 +92,6 @@ public class SumOfRectangle {
         }
 
         if(l1 >=1 && r1 >= 1) {
-        
             leftUp = matrix[l1-1][r1-1];
         }
 
@@ -136,5 +134,6 @@ public class SumOfRectangle {
         int ans = findSum3(matrix, left1, row1, left2, row2);
         System.out.println("The sum is " + ans);
         
+        sc.close();
     }
 }
