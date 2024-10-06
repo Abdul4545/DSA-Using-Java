@@ -7,7 +7,9 @@ public class Main {
             return;
         }
         System.out.println(n);
-        print(n+1);
+        // print(n+1);
+        // print(n = n++);
+        print(++n);
     } 
 
     static int fibonacci(int n) {
@@ -31,14 +33,17 @@ public class Main {
 
         // return (long)(Math.pow(((1 + Math.sqrt(5)) / 2), n)/ Math.sqrt(5));
     }
+
+
     public static void main(String[] args) {
-        // print(1);
+
+        print(1);
         // System.out.println(fibonacci(7));
         // for (int i = 0; i < 11; i++) {
         //     System.out.println(fibonacciFormula(i));
         // }
 
-        System.out.println(fibonacciFormula(50));
+        // System.out.println(fibonacciFormula(50));
 
     }
     

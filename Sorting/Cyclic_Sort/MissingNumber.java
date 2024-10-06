@@ -2,41 +2,28 @@ package Sorting.Cyclic_Sort;
 
 public class MissingNumber {
 
-    static int missingNumber(int[] a, int N) {
-        // Write your code here.
+    static int missingNumber(int[] nums) {
         int i = 0;
-        while (i < N) {
-            
-            int correctIndex = a[i] - 1;
-            // swap
-
-            if(a[i] > N) {
-                return i+1;
-            }
-
-            else if(a[i] == 0) {
-                return i+1;
-            }
-
-            else if(a[i] != a[correctIndex]) {
-                int temp = a[i];
-                a[i] = a[correctIndex];
-                a[correctIndex] = temp;
-            }
-
-
-            else {
+        while (i < nums.length) {
+            int correctIndex = nums[i];
+            if (nums[i] < nums.length && nums[i] != nums[correctIndex]) {
+                // Swap nums[i] with nums[correctIndex]
+                int temp = nums[i];
+                nums[i] = nums[correctIndex];
+                nums[correctIndex] = temp;
+            } else {
                 i++;
             }
         }
 
-        for (int j = 0; j < N-1; j++) {
-            if(a[j] != j+1) {
+        // Find the missing number
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != j) {
                 return j;
             }
         }
 
-        return N;
+        return nums.length;
     }
 
     public static void main(String[] args) {
@@ -46,7 +33,7 @@ public class MissingNumber {
 
         System.out.println();
 
-        System.out.println(missingNumber(arr, 5));
+        System.out.println(missingNumber(arr));
     }
 
 }

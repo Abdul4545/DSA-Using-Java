@@ -14,7 +14,7 @@ public class CountOfDigits {
 
     public static void main(String[] args) {
 
-        System.out.println(COD(40));
+        System.out.println(COD(400000000));
         
     }
     

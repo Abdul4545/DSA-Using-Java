@@ -12,13 +12,13 @@ public class ReverseNumber {
         reverse1(n/10);
     }
 
-    static int reverse2(int n) {
+    public static int reverse2(int n) {
         
         int digits = (int)(Math.log10(n)) + 1;
         return helper(n, digits);
     }
 
-    private static int helper(int n, int digits) {
+    static int helper(int n, int digits) {
         if( n % 10 == n) {
             return n;
         }

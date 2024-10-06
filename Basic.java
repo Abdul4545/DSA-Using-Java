@@ -1,7 +1,7 @@
 // import java.util.Scanner;
 import java.util.*;
 
-public class Basics {
+public class Basic {
     public static void main(String[] args) {
         // output
         // System.out.print("Hello Wolrd\n");

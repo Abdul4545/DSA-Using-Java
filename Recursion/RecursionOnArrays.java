@@ -94,7 +94,7 @@ public class RecursionOnArrays {
             list.add(index);
         }
 
-        return findAllIndices(arr, target, index  +1 , list);  
+        return findAllIndices(arr, target, index + 1 , list);  
     }
 
 

@@ -1,0 +1,32 @@
+Application of Hashmap
+1) Problems related to frequency of an item
+2) Mapping Problems
+3) Storage optimization
+4) Dictionary
+5) Phonebook
+
+what is hashing
+
+arbitrary sized key --> H(key) --> Hashed key
+
+what are hash functions (H(key))
+
+1) H(input1) = output1 always
+2) Aperfect Hash function always produces unique output for unique input.
+
+Generally used hash function
+
+1) Division
+h(k) = k mod M
+
+2) Mid Square Method
+indices available - 0 to 99
+
+H(60) -> 16 * 16  = 256
+
+3) Digit Folding Method
+I) divide the digit into segment of equal size (s)
+II) take sum of segments -> (SUM)
+III) SUM % M (where M is the size of table)
+
+
