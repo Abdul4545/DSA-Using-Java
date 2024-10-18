@@ -232,7 +232,7 @@ public class AVL_Tree {
 
         AVL_Tree tree = new AVL_Tree();
 
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < 100; i++) {
             tree.insert(i);
         }
 

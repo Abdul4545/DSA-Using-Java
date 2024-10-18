@@ -61,6 +61,39 @@ public class BinarySearchTree {
         return node;
     }
 
+
+    public Node searchBST(Node root, int val) {
+        if(root == null || root.value == val) {
+            return root;
+        }
+
+        if(root.value > val) {
+            return searchBST(root.left, val);
+        }
+
+        return searchBST(root.right, val);
+        
+    }
+
+
+    public static boolean searchInBST(Node root, int x) {
+        // Write your code here.
+        if(root == null) {
+            return false;
+        }
+
+        if(root.value == x) {
+            return true;
+        }
+
+        if(root.value > x) {
+            return searchInBST(root.left, x);
+        }
+
+        return searchInBST(root.right, x);
+    }
+
+
     public boolean balanced() {
         return balanced(root);
     }

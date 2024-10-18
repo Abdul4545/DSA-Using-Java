@@ -22,7 +22,16 @@ height = O(n) --> n = no of nodes
 # Oredered Binary Tree
 Every node has some property that is follows. Example: BST
 
-# Helpful Properties
+# Segment Tree
+It is a binary tree which has interval info and operation which we have to perform
+
+Segment tree is a full binary tree
+
+# interval info like 
+index from 2 to 4
+
+# operation 
+sum, multiply of elements
 
 
 
