@@ -16,12 +16,12 @@ public class RotateMatrix {
         for(int i = 0; i < arr.length; i++) {
             int n = arr[i].length-1;
             int j = 0;
-                while(j < n) {
-                    int temp = arr[i][j];
-                     arr[i][j]= arr[i][n]; 
-                     arr[i][n] = temp;
-                    j++;
-                    n--;
+            while(j < n) {
+                int temp = arr[i][j];
+                arr[i][j]= arr[i][n]; 
+                arr[i][n] = temp;
+                j++;
+                n--;
             }
         }
     }

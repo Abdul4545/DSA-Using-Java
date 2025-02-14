@@ -8,7 +8,6 @@ public class VarArgs {
 
 
     static void sum(int ...v) {
-        // System.out.println();
         int sum = 0;
         for (int i : v) {
             sum = sum + i;
